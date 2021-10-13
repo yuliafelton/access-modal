@@ -1,0 +1,22 @@
+.header-menu {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.notes-heading {
+    font-family: 'Roboto', sans-serif;
+}
+
+.button-container {
+    position: absolute;
+    display: flex;
+    right: 0;
+    margin-right: 50px;
+}
+
+.access-button {
+    cursor: pointer;
+}
