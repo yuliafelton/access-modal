@@ -1,12 +1,12 @@
 import  React from 'react';
 import './note.css'
 
-function Note () {
+function Note ({id, text, date}) {
     return (
         <div className="note">
-            <span>Here is a note</span>
+            <span>{text}</span>
             <div className='note-footer'>
-                <small>date here</small>
+                <small>{date}</small>
                 <b>x</b>
             </div>
         </div>
