@@ -1,0 +1,36 @@
+.note.new {
+     background-color: #45A29E;
+     color: #0B0C10;
+}
+textarea {
+     border: none;
+     resize: none;
+     background-color: #45A29E;
+     color: #0B0C10;
+}
+
+textarea:focus {
+     outline: none;
+}
+
+textarea::placeholder {
+     color: #C5C6C7;
+     font-family: 'Roboto Condensed', sans-serif;
+}
+
+.save {
+     background-color: #C5C6C7;
+     border: none;
+     border-radius: 15px;
+     padding: 5px 10px 5px 10px;
+     color: #0B0C10;
+}
+
+.save:hover {
+     background-color: #ededed;
+     cursor: pointer;
+}
+
+small {
+     color: #0B0C10;
+}

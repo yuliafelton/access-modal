@@ -1,13 +1,13 @@
 import  React from 'react';
 import './note.css'
 
-function Note () {
+function Note ({id, text, date, handleDeleteNote}) {
     return (
         <div className="note">
-            <span>Here is a note</span>
+            <span>{text}</span>
             <div className='note-footer'>
-                <small>date here</small>
-                <b>x</b>
+                <small>{date}</small>
+                <b className='delete-icon' onClick={() => handleDeleteNote(id)}>x</b>
             </div>
         </div>
         )

@@ -6,7 +6,14 @@ export const appSlice = createSlice({
     name: 'app',
     initialState,
     reducers: {
-
+        setSelectedEmails: (state, action) => {
+            state.selectedEmails = action.payload;
+        },
+        deleteEmail: (state, action) => {
+            state.selectedEmails = state.selectedEmails.filter(
+                (email) => email !== action.payload
+            );
+        },
     },
     extraReducers: {
         [fetchEmails.pending]: (state) => {
@@ -28,5 +35,5 @@ export const appSlice = createSlice({
     }
 });
 
-
+export const {setSelectedEmails, deleteEmail} = appSlice.actions;
 export default appSlice.reducer;

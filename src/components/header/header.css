@@ -7,7 +7,9 @@
 }
 
 .notes-heading {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    color: #66FCF1;
 }
 
 .button-container {
